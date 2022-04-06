@@ -1,5 +1,5 @@
-msg = "So hello, much world"
-print(msg)
+str_list = ["Donbas", "Luhansk", "Russia"]
 
-msg = 1
-print(id(msg))
+united = "@".join(str_list)
+
+print(united)
