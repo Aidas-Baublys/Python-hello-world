@@ -1,9 +1,5 @@
+msg = "So hello, much world"
+print(msg)
 
-
-print("Valio")
-
-big_num = 1_000_000
-
-foo = None
-
-print(foo)
+msg = 1
+print(id(msg))
