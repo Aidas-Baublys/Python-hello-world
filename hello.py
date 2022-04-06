@@ -1,5 +1,4 @@
-str_list = ["Donbas", "Luhansk", "Russia"]
+import os
 
-united = "@".join(str_list)
-
-print(united)
+os.environ.setdefault("Pats sugalvojau", "Sita env")
+print(os.environ)
