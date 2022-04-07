@@ -1,4 +1,9 @@
-import os
+import copy
 
-os.environ.setdefault("Pats sugalvojau", "Sita env")
-print(os.environ)
+
+simple = [1, [2], 3]
+simple_2 = copy.deepcopy(simple)
+
+simple_2[1][0] = 22
+
+print(simple, simple_2)
