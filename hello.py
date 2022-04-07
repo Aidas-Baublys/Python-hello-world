@@ -1,9 +1,9 @@
-import copy
+from datetime import datetime
 
 
-simple = [1, [2], 3]
-simple_2 = copy.deepcopy(simple)
+dates = [datetime(1990, 2, 1), datetime(1990, 1, 1), datetime(2000, 10, 11),
+         datetime(1999, 2, 13), datetime(2010, 11, 12)]
 
-simple_2[1][0] = 22
-
-print(simple, simple_2)
+print(dates)
+dates.sort()
+print(dates)
