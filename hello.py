@@ -1,9 +1,10 @@
-from datetime import datetime
+dict1 = {
+    1: [1, 2, 3, 4],
+    2: [1, 2, 3],
+    3: [1, 2],
+    4: [1, 2, 3, 4, 5]
+}
 
-
-dates = [datetime(1990, 2, 1), datetime(1990, 1, 1), datetime(2000, 10, 11),
-         datetime(1999, 2, 13), datetime(2010, 11, 12)]
-
-print(dates)
-dates.sort()
-print(dates)
+for key in dict1:
+    if key % 2 == 0:
+        print(f"key: {key}, val: {dict1[key]}", dict1[key][::2])
