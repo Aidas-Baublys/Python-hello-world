@@ -1,10 +1,12 @@
-dict1 = {
-    1: [1, 2, 3, 4],
-    2: [1, 2, 3],
-    3: [1, 2],
-    4: [1, 2, 3, 4, 5]
-}
+list_2d = [[1, 2, 3], [1, 2, 3, 4], [1, 2]]
+list_flat = [2, 1, 1, 1]
 
-for key, value in dict1.items():
-    if key % 2 == 0:
-        print(f"key: {key}, val: {value}", value[::2])
+print(list_flat.index(1))
+
+for k in list_2d:
+    for j, val in enumerate(k):
+        k[j] *= 100
+
+for k in list_2d:
+    for j in k:
+        print(j)
