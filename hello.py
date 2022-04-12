@@ -1,12 +1,7 @@
-list_2d = [[1, 2, 3], [1, 2, 3, 4], [1, 2]]
-list_flat = [2, 1, 1, 1]
-
-print(list_flat.index(1))
+list_2d = [[1, 2, 3], [13, 7, 8, 2], [1, 2, 3, 4], [1, 2]]
+list_flat = []
 
 for k in list_2d:
-    for j, val in enumerate(k):
-        k[j] *= 100
+    list_flat += [x for x in k if x % 2 == 0]
 
-for k in list_2d:
-    for j in k:
-        print(j)
+print(list_flat)
