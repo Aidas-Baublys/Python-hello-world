@@ -5,6 +5,6 @@ dict1 = {
     4: [1, 2, 3, 4, 5]
 }
 
-for key in dict1:
+for key, value in dict1.items():
     if key % 2 == 0:
-        print(f"key: {key}, val: {dict1[key]}", dict1[key][::2])
+        print(f"key: {key}, val: {value}", value[::2])
