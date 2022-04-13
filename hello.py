@@ -1,7 +1,18 @@
-list_2d = [[1, 2, 3], [13, 7, 8, 2], [1, 2, 3, 4], [1, 2]]
-list_flat = []
+def average(*args):
+    print(sum(args) / len(args))
 
-for k in list_2d:
-    list_flat += [x for x in k if x % 2 == 0]
 
-print(list_flat)
+average(1, 2, 3, 4, 5, 6)
+
+
+def average_2(*args):
+    res = 0
+    counter = 0
+    for arg in args:
+        res += arg
+        counter += 1
+
+    print(res / counter)
+
+
+average_2(1, 2, 3, 4, 5, 6)
