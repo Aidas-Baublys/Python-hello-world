@@ -1,5 +1,7 @@
 import numpy as np
 
-a = np.ones((2, 2))
+a = np.array([1, 2])
 
-print(a)
+b = np.repeat(a, 2)
+
+print(b)
